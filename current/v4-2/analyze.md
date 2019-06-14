@@ -6,7 +6,7 @@ https://api.hatebase.org/4-2/analyze
 
 ## Description
 
-The /analyze endpoint allows users to submit a custom piece of content for analysis by HateBrain, the natural language parsing engine at the heard of Hatebase. Submitting content through this endpoint returns a request_id which can then be used with the /get_analysis endpoint to see the results of HateBrain's assessment. Analysis can take anywhere from a few minutes to a couple hours, depending on the complexity of the content and the volume of traffic at the time of request. Requests auto-expire within 48 hours.
+The /analyze endpoint allows users to submit a custom piece of content for analysis by HateBrain, the natural language parsing engine at the heart of Hatebase. Submitting content through this endpoint returns a request_id which can then be used with the /get_analysis endpoint to see the results of HateBrain's assessment. Analysis can take anywhere from a few minutes to a couple hours, depending on the complexity of the content and the volume of traffic at the time of request. Requests auto-expire within 48 hours.
 
 Note that the /analyze endpoint is intended for use with short user posts, as in a chat session. Posts of greater than 3,000 characters will be truncated. A minimum length of 50 characters is also recommended (although posts as short as 25 characters will be accepted), because language detection is unreliable with extremely short pieces of content.
 
