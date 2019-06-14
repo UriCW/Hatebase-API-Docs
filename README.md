@@ -34,6 +34,10 @@ The API is queried with a key which is obtained from your Hatebase account:
   api_key: ABC123
 }
 ```
+Using curl this can be done as follows:
+```bash
+curl -d 'api_key=ABC123' https://api.hatebase.org/1-0/authenticate
+```
 
 The returned data provides the input parameters which were queried, plus a resultset (in this case a session token), plus any warnings and/or errors:
 
